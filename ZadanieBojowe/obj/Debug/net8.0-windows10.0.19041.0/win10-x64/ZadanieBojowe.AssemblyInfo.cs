@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZadanieBojowe")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+c03a78a158136b7a234684b242e36d230dabdec8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+e58555a5e514a5ecac41c05923712863ccea7250")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZadanieBojowe")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZadanieBojowe")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

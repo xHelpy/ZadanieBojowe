@@ -1,25 +1,32 @@
-﻿namespace ZadanieBojowe
+﻿using System.Collections.ObjectModel;
+
+namespace ZadanieBojowe
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        private ObservableCollection<string> tasks;
 
         public MainPage()
         {
             InitializeComponent();
+
+            tasks = new ObservableCollection<string>
+            {
+                "zakupy: chleb, masło, ser",
+                "do zrobienia: obiad, umyć podłogi",
+                "weekend: kino, spacer z psem"
+            };
+
+            TaskListView.ItemsSource = tasks;
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void OnAddButtonClicked(object sender, EventArgs e)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            if (!string.IsNullOrWhiteSpace(NewItemEntry.Text))
+            {
+                tasks.Add(NewItemEntry.Text);
+                NewItemEntry.Text = string.Empty;
+            }
         }
     }
-
 }

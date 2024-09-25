@@ -32925,11 +32925,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\a4\\source\\repos\\ZadanieBojowe\\ZadanieBojowe\\ZadanieBojowe.csproj",
+      "projectUniqueName": "C:\\Users\\a4\\Desktop\\Projekty\\ZadanieBojowe\\ZadanieBojowe\\ZadanieBojowe.csproj",
       "projectName": "ZadanieBojowe",
-      "projectPath": "C:\\Users\\a4\\source\\repos\\ZadanieBojowe\\ZadanieBojowe\\ZadanieBojowe.csproj",
+      "projectPath": "C:\\Users\\a4\\Desktop\\Projekty\\ZadanieBojowe\\ZadanieBojowe\\ZadanieBojowe.csproj",
       "packagesPath": "C:\\Users\\a4\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\a4\\source\\repos\\ZadanieBojowe\\ZadanieBojowe\\obj\\",
+      "outputPath": "C:\\Users\\a4\\Desktop\\Projekty\\ZadanieBojowe\\ZadanieBojowe\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

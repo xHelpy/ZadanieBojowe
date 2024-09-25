@@ -2,24 +2,33 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        private int liczbaPolubien = 0;
 
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void KliknieteLubieTo(object sender, EventArgs e)
         {
-            count++;
+            liczbaPolubien++;
+            AktualizujEtykietePolubien();
+        }
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+        private void KliknieteNieLubie(object sender, EventArgs e)
+        {
+            if (liczbaPolubien > 0)
+            {
+                liczbaPolubien--;
+            }
+            AktualizujEtykietePolubien();
+        }
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        private void AktualizujEtykietePolubien()
+        {
+            EtykietaPolubien.Text = $"{liczbaPolubien} polubień";
         }
     }
+
 
 }
